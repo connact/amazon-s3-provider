@@ -60,7 +60,7 @@ namespace Telerik.Sitefinity.Amazon.BlobStorage
                 }
             }
 
-            this.serviceUrl = string.Concat(this.urlScheme, "://", this.bucketName, ".s3.amazonaws.com/");
+            this.serviceUrl = string.Concat(this.urlScheme, "://", this.bucketName, ".s3."+regionEndpoint.SystemName+".amazonaws.com/");
         }
 
         /// <summary>
